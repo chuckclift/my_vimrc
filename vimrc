@@ -8,10 +8,6 @@
 
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages available in Debian.
-runtime! debian.vim
-
-" Uncomment the next line to make Vim more Vi-compatible
-" NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
 " options, so any other options should be set AFTER setting 'compatible'.
 "set compatible
 
@@ -47,6 +43,7 @@ runtime! debian.vim
 "set mouse=a		" Enable mouse usage (all modes)
 
 " Source a global configuration file if available
+
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
@@ -58,5 +55,10 @@ imap ;; <esc>
 
 set nowrap
 set number
+
+set tabstop=4     " The width of tab is set to 4
+set shiftwidth=4  " Indents have a width of 4
+set softtabstop=4 " sets the number of columns for a tab
+set expandtab     " expand tabs to spaces
 
 
