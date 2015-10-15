@@ -61,4 +61,8 @@ set shiftwidth=4  " Indents have a width of 4
 set softtabstop=4 " sets the number of columns for a tab
 set expandtab     " expand tabs to spaces
 
-
+" Folding settings
+set foldmethod=indent   "Fold based on indent
+set foldnestmax=10      "Deepest fold is 10 levels
+set nofoldenable        "Don't fold by default
+set foldlevel=1
